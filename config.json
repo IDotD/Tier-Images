@@ -1,0 +1,248 @@
+{
+    "OldguildTiers": {
+        "raids": [
+            "Agony",
+            "Al-Azab",
+            "Arachna",
+            "Banhammer bros",
+            "Black Moon",
+            "Celeano",
+            "Deathglare",
+            "Dirthax",
+            "Dreadbloom",
+            "Euphronios",
+            "Gladiators",
+            "Groblar",
+            "Hammer",
+            "Lunatics",
+            "Obyron",
+            "Ragetalon",
+            "Scuttlegore",
+            "Slaughterers",
+            "Tetrarchos",
+            "Tithrasia",
+            "Varlachleth"
+        ],
+        "type": "2/9"
+    },
+    "allTiers1": {
+        "raids": [],
+        "type": "small"
+    },
+    "allTiers2": {
+        "raids": [],
+        "type": "small"
+    },
+    "colosalTiers": {
+        "raids": [
+            "Abomination",
+            "Ancients' Engine",
+            "Badlands",
+            "Balor",
+            "Behemoth",
+            "Cannibal",
+            "Caracalla",
+            "Clockwork Dragon",
+            "Deadly Bastion",
+            "Fear",
+            "Frozen Spire",
+            "Hellemental",
+            "Kanehuar",
+            "Karkata",
+            "Kr'xunara",
+            "Ruzzik",
+            "Siculus",
+            "Stampede",
+            "Vortex",
+            "Way Warden",
+            "Xerkara"
+        ],
+        "type": "full"
+    },
+    "eliteTiers": {
+        "raids": [
+            "E. 5th Terror",
+            "E. balor",
+            "E. Bloodsuckers",
+            "E. Butcher",
+            "E. Caster",
+            "E. Cecile",
+            "E. Funny Bones",
+            "E. Initiates",
+            "E. Kane",
+            "E. Karkata",
+            "E. Killers",
+            "E. Malleus",
+            "E. Mangler",
+            "E. Murderer",
+            "E. Reaper",
+            "E. Riders",
+            "E. Slitherer",
+            "E. Warrior",
+            "E. Whispers"
+        ],
+        "type": "full"
+    },
+    "epicTiers": {
+        "raids": [
+            "Burbata",
+            "Colossus",
+            "Darkness",
+            "Forest",
+            "Frog-Men",
+            "Jack",
+            "Jack's Revenge",
+            "Jershan'thurn",
+            "Marius",
+            "Murgrux",
+            "Odious Pods",
+            "Rannveig",
+            "Reaper Mantis",
+            "Satyr",
+            "Shaar",
+            "Stormship",
+            "Valley of Death",
+            "Yydian"
+        ],
+        "type": "full"
+    },
+    "gigaTiers": {
+        "raids": [
+            "D. Dreams",
+            "Deadly Clockwork",
+            "Drakontos",
+            "Engines of War",
+            "Euryino",
+            "Gataalli",
+            "Horthania",
+            "Hybrid",
+            "Imryx",
+            "Konungar",
+            "Jormungan",
+            "Red Snow",
+            "Trekex",
+            "Wilds"
+        ],
+        "type": "full"
+    },
+    "guildTiers": {
+        "raids": [
+            "Adrastos",
+            "Apoc Demon",
+            "Bog Bodies",
+            "Clockwork Giant",
+            "Dar'Hed'Nal",
+            "Doomglare",
+            "Elite Gladiators",
+            "Grundus",
+            "Keron",
+            "Krasgore",
+            "Malchar",
+            "N'rlux",
+            "Nylatrix",
+            "Paracoprion",
+            "Rhalmarius",
+            "Salome",
+            "Tuxargus",
+            "Xessus"
+        ],
+        "type": "full"
+    },
+    "guildTiers2": {
+        "raids": [
+            "Bash Brothers",
+            "Collector",
+            "Djinn",
+            "E. Devourer",
+            "Fae Dragon",
+            "Fire Elemental",
+            "Hullbore Wyrms",
+            "Strength Potion",
+            "Unholy Rite"
+        ],
+        "type": "full"
+    },
+    "largeTiers": {
+        "raids": [
+            "Blood Dancer",
+            "Drulcharus",
+            "Gigantomachy",
+            "Green Killers",
+            "Initiates",
+            "Leonine",
+            "Lord Hoton",
+            "Malleus",
+            "Present Bearer",
+            "Sporeforms",
+            "Teremarthu",
+            "Thaw of Elvigar",
+            "Verkiteia",
+            "Z'ralk'thalat"
+        ],
+        "type": "full"
+    },
+    "lowTiers": {
+        "raids": [
+            "Alice",
+            "Ataxes",
+            "Baroness",
+            "Bellarius",
+            "Bloodmane",
+            "Bogstench",
+            "Briareus",
+            "Erakka-Sak",
+            "Erebus",
+            "Gravlok",
+            "Grimsly",
+            "Grune",
+            "Guilbert",
+            "Gunnar",
+            "Hargamesh",
+            "Horgrak",
+            "Hydra",
+            "Ironclad",
+            "Kalaxia",
+            "Kang-Gsod",
+            "Kerberos"
+        ],
+        "type": "2/9"
+    },
+    "mediumTiers": {
+        "raids": [
+            "Ascendant's Echo",
+            "Damned Shade",
+            "Doppelganger",
+            "Dryads",
+            "Gulkinari",
+            "Hurkus",
+            "Korxun",
+            "Lost",
+            "Punishment",
+            "Ragunt",
+            "Riddler",
+            "Rudaru",
+            "Shadow",
+            "Tisiphone"
+        ],
+        "type": "full"
+    },
+    "smallTiers": {
+        "raids": [
+            "Alchemist",
+            "Bad Blood",
+            "Bakku",
+            "Bloodsuckers",
+            "Krugnug",
+            "Lair",
+            "Nereidon",
+            "Rekkr 2",
+            "Serpina",
+            "Solus",
+            "Snow Dragon",
+            "Thaltherda",
+            "Valtrias",
+            "Zugen"
+        ],
+        "type": "full"
+    }
+}
