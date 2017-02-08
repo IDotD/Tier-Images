@@ -69,7 +69,7 @@ class Size29 implements Controller {
      */
     protected function handleFullRaid($set,$rData,&$r) {
         foreach($set['raids'] as $sRaid) {
-            if(stripos($rData['name'],$sRaid)) {
+            if(stripos($rData['name'],$sRaid) !== false) {
                 switch($r % 4) {
                     case 3:
                         $this->getRightImage($rData['name'],$rData['ap'],$rData['os']['nm'],[255,255,255]);

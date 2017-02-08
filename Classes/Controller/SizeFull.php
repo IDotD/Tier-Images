@@ -48,7 +48,7 @@ class SizeFull implements Controller {
      */
     protected function handleFullRaid($set,$rData,&$r) {
         foreach($set['raids'] as $sRaid) {
-            if(stripos($rData['name'],$sRaid)) {
+            if(stripos($rData['name'],$sRaid) !== false) {
                 $this->getImage($rData['name'],$rData['ap'],$rData['os']['nm'],max($rData['nm']),$rData['nm'],$r?[200,200,200]:[255,255,255]);
                 $r = !$r;
                 return;
