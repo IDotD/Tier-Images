@@ -2,7 +2,7 @@
 
 namespace De\Idrinth\TierImages\Row;
 
-class Size29 extends Row {
+class SizeHalf extends Row {
     /**
      *
      * @var string[]
@@ -12,6 +12,11 @@ class Size29 extends Row {
         200 => 'ap',
         250 => 'os'
     ];
+    /**
+     *
+     * @var int
+     */
+    protected static $width = 300;
     /**
      *
      * @param string $name

@@ -28,9 +28,10 @@ class ImageGenerator {
      */
     protected function getHandler($type) {
         switch($type) {
-            case 'small'://todo
+            case 'small':
+                return new Controller\SizeHalf('os','OS');
             case '2/9':
-                return new Controller\Size29();
+                return new Controller\SizeHalf(/* 'fsOs' */'fs','2/9');
             case 'full':
             default:
                 return new Controller\SizeFull();

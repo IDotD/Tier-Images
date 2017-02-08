@@ -2,7 +2,7 @@
 
 namespace De\Idrinth\TierImages\Controller;
 
-class Size29 implements Controller {
+class SizeHalf implements Controller {
     /**
      *
      * @var resource
@@ -15,10 +15,22 @@ class Size29 implements Controller {
     protected $rightImage;
     /**
      *
+     * @var string
      */
-    public function __construct() {
+    protected $thirdField;
+    /**
+     *
+     * @var string
+     */
+    protected $thirdFieldLabel;
+    /**
+     *
+     */
+    public function __construct($thirdField,$thirdFieldLabel) {
         $this->rightImage = imagecreate(300,1);
         $this->leftImage = imagecreate(300,1);
+        $this->thirdField = $thirdField;
+        $this->thirdFieldLabel = $thirdFieldLabel;
     }
     /**
      *
@@ -28,8 +40,8 @@ class Size29 implements Controller {
      */
     public function run($data,$set) {
         $r = 0;
-        $this->getLeftImage("Name","AP","2/9",[255,255,255]);
-        $this->getRightImage("Name","AP","2/9",[255,255,255]);
+        $this->getLeftImage("Name","AP",$this->thirdFieldLabel,[255,255,255]);
+        $this->getRightImage("Name","AP",$this->thirdFieldLabel,[255,255,255]);
         foreach($data as $rData) {
             $this->handleFullRaid($set,$rData,$r);
         }
@@ -49,7 +61,7 @@ class Size29 implements Controller {
      * @param int[] $background
      */
     protected function getLeftImage($name,$ap,$os,$background) {
-        $this->leftImage = (new \De\Idrinth\TierImages\Row\Size29($name,$ap,$os))->addToImage($this->leftImage,$background);
+        $this->leftImage = (new \De\Idrinth\TierImages\Row\SizeHalf($name,$ap,$os))->addToImage($this->leftImage,$background);
     }
     /**
      *
@@ -59,7 +71,7 @@ class Size29 implements Controller {
      * @param int[] $background
      */
     protected function getRightImage($name,$ap,$os,$background) {
-        $this->rightImage = (new \De\Idrinth\TierImages\Row\Size29($name,$ap,$os))->addToImage($this->rightImage,$background);
+        $this->rightImage = (new \De\Idrinth\TierImages\Row\SizeHalf($name,$ap,$os))->addToImage($this->rightImage,$background);
     }
     /**
      *
@@ -72,17 +84,17 @@ class Size29 implements Controller {
             if(stripos($rData['name'],$sRaid) !== false) {
                 switch($r % 4) {
                     case 3:
-                        $this->getRightImage($rData['name'],$rData['ap'],$rData['os']['nm'],[255,255,255]);
+                        $this->getRightImage($rData['name'],$rData['ap'],$rData[$this->thirdField]['nm'],[255,255,255]);
                         break;
                     case 2:
-                        $this->getLeftImage($rData['name'],$rData['ap'],$rData['os']['nm'],[255,255,255]);
+                        $this->getLeftImage($rData['name'],$rData['ap'],$rData[$this->thirdField]['nm'],[255,255,255]);
                         break;
                     case 1:
-                        $this->getRightImage($rData['name'],$rData['ap'],$rData['os']['nm'],[200,200,200]);
+                        $this->getRightImage($rData['name'],$rData['ap'],$rData[$this->thirdField]['nm'],[200,200,200]);
                         break;
                     case 0:
                     default:
-                        $this->getLeftImage($rData['name'],$rData['ap'],$rData['os']['nm'],[200,200,200]);
+                        $this->getLeftImage($rData['name'],$rData['ap'],$rData[$this->thirdField]['nm'],[200,200,200]);
                 }
                 $r++;
                 return;
