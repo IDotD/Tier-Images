@@ -5,4 +5,6 @@ function __autoload($class) {
 if(!isset($_GET['name'])) {
     die();
 }
-(new De\Idrinth\TierImages\ImageGenerator())->run($_GET['name'],__DIR__ . '/tiers.json');
+(new De\Idrinth\TierImages\ImageGenerator())->run(
+        $_GET['name'],is_file(__DIR__ . '/tiers.json')?__DIR__ . '/tiers.json':__DIR__ . '/../tiers.json'
+);
