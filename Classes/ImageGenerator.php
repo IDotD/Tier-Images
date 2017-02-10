@@ -6,16 +6,17 @@ class ImageGenerator {
     /**
      *
      * @param string $set
+     * @param string $data
      * @return void
      */
-    public function run($set) {
+    public function run($set,$data) {
         header('Content-Type: image/jpeg');
         $set = json_decode(file_get_contents('config.json'),true)[$set];
         if(!$set) {
             return;
         }
         /* 'https://dotd.idrinth.de/static/tier-service/' => tiers.json */
-        $data = json_decode(file_get_contents('tiers.json'),true);
+        $data = json_decode(file_get_contents($data),true);
         if(!$data) {
             return;
         }
