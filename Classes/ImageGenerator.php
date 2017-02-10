@@ -31,7 +31,7 @@ class ImageGenerator {
             case 'small':
                 return new Controller\SizeHalf('os','OS');
             case '2/9':
-                return new Controller\SizeHalf(/* 'fsOs' */'fs','2/9');
+                return new Controller\Size29();
             case 'full':
             default:
                 return new Controller\SizeFull();
